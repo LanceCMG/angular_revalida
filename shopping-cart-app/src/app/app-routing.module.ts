@@ -19,10 +19,11 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'pending-orders', component: PendingOrdersComponent },
-  { path: 'admin-dashboard', component: DashboardAdminComponent },
+  { path: 'dashboard-admin', component: DashboardAdminComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'admin', component: AdminComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' } // Wildcard para sa 404
 ];
 
 @NgModule({
