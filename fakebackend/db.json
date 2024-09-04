@@ -8,8 +8,7 @@
       "firstName": "John",
       "lastName": "Doe",
       "email": "admin@example.com",
-      "birthdate": "2000-01-01",
-      "interests": ["Management", "Technology"]
+      "birthdate": "2000-01-01"
     },
     {
       "id": 2,
@@ -19,27 +18,123 @@
       "firstName": "Jane",
       "lastName": "Smith",
       "email": "customer@example.com",
-      "birthdate": "1990-05-15",
-      "interests": ["Shopping", "Coffee"]
+      "birthdate": "1990-05-15"
+  
+    },
+    {
+      "id": 3,
+      "username": "amsgapuz",
+      "password": "amsgapuz",
+      "role": "customer",
+      "firstName": "April",
+      "lastName": "Gapuz",
+      "email": "agapuz@77global.biz",
+      "birthdate": "1997-04-05"
+    
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "Nescafe Sachet",
-      "description": "Instant coffee sachet, 20g",
-      "price": 2.0,
-      "category": "Beverages",
+      "name": "Cheese Burger",
+      "description": "Signature flame-grilled beef patty with melted cheese.",
+      "price": 129.00,
+      "category": "entrees",
       "stock": 50
     },
     {
       "id": 2,
-      "name": "Milo Sachet",
-      "description": "Milo sachet, 20g",
-      "price": 100.00,
-      "category": "Beverages",
+      "name": "Hawaiian Pizza",
+      "description": "Classic hand-tossed pizza topped with pineapple, ham, and pepperoni.",
+      "price": 259.00,
+      "category": "entrees",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Spaghetti",
+      "description": "Filipino-style spaghetti pasta with meatballs.",
+      "price": 229.00,
+      "category": "entrees",
+      "stock": 50
+    },
+    {
+      "id": 4,
+      "name": "Chicken Fingers",
+      "description": "Crispy and juicy chicken tenders that are breaded and fried to perfection.",
+      "price": 239.00,
+      "category": "entrees",
+      "stock": 50
+    },
+    {
+      "id": 5,
+      "name": "Nachos",
+      "description": "Golden tortilla chips generously smothered with perfectly melted cheese.",
+      "price": 139.00,
+      "category": "entrees",
+      "stock": 50
+    },
+    {
+      "id": 6,
+      "name": "Waffles",
+      "description": "Freshly baked waffle topped with sundae.",
+      "price": 129.00,
+      "category": "entrees",
+      "stock": 50
+    },
+    {
+      "id": 7,
+      "name": "Fries",
+      "description": "Savory homemade seasoned French fries.",
+      "price": 59.00,
+      "category": "sides",
+      "stock": 50
+    },
+    {
+      "id": 8,
+      "name": "Onion Rings",
+      "description": "Homemade deep-fried onion Rings.",
+      "price": 59.00,
+      "category": "sides",
+      "stock": 50
+    },
+    {
+      "id": 8,
+      "name": "Iced Coffee",
+      "description": "Fresh brewed and served over ice.",
+      "price": 109.00,
+      "category": "drinks",
+      "stock": 50
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Milkshake",
+      "description": "Creamy Chocolate Milkshake made with premium ingredients and ice cream.",
+      "price": 109.00,
+      "category": "drinks",
+      "stock": 50
+    },
+    {
+      "id": 9,
+      "name": "Mango Lemonade Refresher",
+      "description": "Refreshing blend of lemonade and mango flavors.",
+      "price": 109.00,
+      "category": "drinks",
+      "stock": 50
+    },
+    {
+      "id": 10,
+      "name": "Bottled water",
+      "description": "Mineral drinking water.",
+      "price": 29.00,
+      "category": "drinks",
       "stock": 50
     }
+  ],
+  "categories":[
+    "entrees",
+    "sides",
+    "drinks"
   ],
   "carts": [
     {
@@ -68,5 +163,9 @@
       "totalPrice": 2.0,
       "createdAt": "2024-08-28"
     }
+  ],
+  "status": [
+    "pending",
+    "delivered"
   ]
 }
