@@ -12,12 +12,21 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
 
-  findUserByDetails(username: string, email: string, mobile: string): Observable<any> {
+  findUserByDetails(username: string, email: string, mobile: number): Observable<any> {
     return this.http.get<any[]>(this.apiUrl).pipe(
-      map(users => users.find(user => user.username === username && user.email === email && user.mobile === mobile)),
-      catchError(this.handleError<any>('findUserByDetails', null))
+      map(users => {
+        const user = users.find(user => 
+          user.username === username && 
+          user.email === email && 
+          user.mobile === +mobile // forced siya tignan as a unmber
+        );
+        return user ? user : null;
+      }),
+      catchError(this.handleError<any>('findUserByDetails', null))  // Return null if wala makita
     );
   }
+  
+  
 
   authenticateUser(username: string, password: string): Observable<any> {
     return this.http.get<any[]>(this.apiUrl).pipe(

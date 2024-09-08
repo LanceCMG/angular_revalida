@@ -10,6 +10,7 @@ import { PendingOrdersComponent } from './pending-orders/pending-orders.componen
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
+import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'dashboard-admin', component: DashboardAdminComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'acknowledgment', component: AcknowledgmentComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' } // Wildcard para sa 404
 ];

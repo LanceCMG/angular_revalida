@@ -16,6 +16,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PendingOrdersComponent,
     DashboardAdminComponent,
     ProductsComponent,
-    AdminComponent
+    AdminComponent,
+    AcknowledgmentComponent
   ],
   imports: [
     BrowserModule,
