@@ -1,4 +1,6 @@
 # Ignore Angular cache
 .angular/cache/
+.angular/
+shopping-cart-app/.angular/
 .vscode
 node_modules

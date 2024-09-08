@@ -9,7 +9,8 @@
       "lastName": "Doe",
       "email": "admin@example.com",
       "birthdate": "2000-01-01",
-      "interest": ["burger","coffee"]
+      "interest": ["burger","coffee"],
+      "mobile": 639111111111
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "lastName": "Smith",
       "email": "customer@example.com",
       "birthdate": "1990-05-15",
-      "interest": ["burger","coffee"]
+      "interest": ["burger","coffee"],
+      "mobile": 639222222222
   
     },
     {
@@ -32,7 +34,8 @@
       "lastName": "Gapuz",
       "email": "agapuz@77global.biz",
       "birthdate": "1997-04-05",
-      "interest": ["burger","coffee"]
+      "interest": ["burger","coffee"],
+      "mobile": 639333333333
     
     }
   ],
