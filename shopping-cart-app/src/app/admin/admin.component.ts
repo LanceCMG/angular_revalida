@@ -12,7 +12,8 @@ export class AdminComponent implements OnInit {
   newUser = {
     username: '',
     email: '',
-    mobile: ''
+    mobile: '',
+    role: ''
   };
   errorMessage: string | null = null;
 
@@ -39,7 +40,7 @@ export class AdminComponent implements OnInit {
       this.userService.addUser(this.newUser).subscribe(
         () => {
           this.loadUsers(); 
-          this.newUser = { username: '', email: '', mobile: '' };
+          this.newUser = { username: '', email: '', mobile: '', role: '' };
         },
         (error) => {
           this.errorMessage = 'Failed to add user';

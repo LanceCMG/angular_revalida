@@ -83,6 +83,7 @@ export interface User {
   email: string;
   mobile: number;
   password: string;
+  role: 'admin' | 'customer';
   active: boolean;
 }
 
