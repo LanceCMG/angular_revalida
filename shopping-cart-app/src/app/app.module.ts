@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,8 +17,8 @@ import { PendingOrdersComponent } from './pending-orders/pending-orders.componen
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
+import { AdminGuard } from './admin.guard';
 
 @NgModule({
   declarations: [
@@ -36,11 +38,12 @@ import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.compone
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
+    RouterModule,
+    CommonModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule
   ],
-  providers: [],
+  providers: [AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
