@@ -51,6 +51,24 @@ export class UserService {
     localStorage.removeItem(this.currentUserKey);
   }
 
+  getAllUsers(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl).pipe(
+      catchError(this.handleError<any[]>('getAllUsers', []))
+    );
+  }
+
+  addUser(user: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, user).pipe(
+      catchError(this.handleError<any>('addUser'))
+    );
+  }
+
+  deactivateUser(userId: number): Observable<any> {
+    return this.http.patch<any>(`${this.apiUrl}/${userId}`, { active: false }).pipe(
+      catchError(this.handleError<any>('deactivateUser'))
+    );
+  }
+
   // Handle HTTP errors
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
@@ -59,3 +77,13 @@ export class UserService {
     };
   }
 }
+
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  mobile: number;
+  password: string;
+  active: boolean;
+}
+
