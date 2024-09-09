@@ -10,7 +10,8 @@
       "email": "admin@example.com",
       "birthdate": "2000-01-01",
       "interest": ["burger","coffee"],
-      "mobile": 639111111111
+      "mobile": 639111111111,
+      "active": true
     },
     {
       "id": 2,
@@ -22,8 +23,8 @@
       "email": "customer@example.com",
       "birthdate": "1990-05-15",
       "interest": ["burger","coffee"],
-      "mobile": 639222222222
-  
+      "mobile": 639222222222,
+      "active": true
     },
     {
       "id": 3,
@@ -35,8 +36,8 @@
       "email": "agapuz@77global.biz",
       "birthdate": "1997-04-05",
       "interest": ["burger","coffee"],
-      "mobile": 639333333333
-    
+      "mobile": 639333333333,
+      "active": true
     }
   ],
   "products": [

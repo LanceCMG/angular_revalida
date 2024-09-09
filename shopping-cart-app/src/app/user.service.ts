@@ -35,7 +35,6 @@ export class UserService {
     );
   }
 
-  // Retrieve the current user from local storage
   getCurrentUser(): any {
     const user = localStorage.getItem(this.currentUserKey);
     return user ? JSON.parse(user) : null;

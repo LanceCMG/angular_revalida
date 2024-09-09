@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../user.service';  // Import UserService
-import { User } from '../user.service';  // Import User model (or define your own interface)
+import { UserService } from '../user.service';
+import { User } from '../user.service';
 
 @Component({
   selector: 'app-admin',
