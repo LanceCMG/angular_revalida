@@ -1,3 +1,128 @@
-<p>dashboard works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <div id="body-container">
+        <div id="floating-header">
+            <img src="assets/images/77Diners.png" height="80">
+        </div>
+        <div id="content-container">
+            <div id="content-wrapper">
+                <div id="side-bar">
+                    <div class="side-bar-partition">
+                        <div class="side-bar-nav">
+                            <div class="side-bar-item">
+                                <div class="side-bar-item-name">
+                                    <a>All products</a>
+                                </div>
+                                <div class="side-bar-item-arrow">
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="side-bar-item">
+                                <div class="side-bar-item-name">
+                                    <a>Beverages</a>
+                                </div>
+                                <div class="side-bar-item-arrow">
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="side-bar-item">
+                                <div class="side-bar-item-name">
+                                    <a>Entrees</a>
+                                </div>
+                                <div class="side-bar-item-arrow">
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="side-bar-item">
+                                <div class="side-bar-item-name">
+                                    <a>Sides</a>
+                                </div>
+                                <div class="side-bar-item-arrow">
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-bar-partition">
+                        <div class="sort-container">
+                            <a>Sort</a>
+                            <div>
+                                <button class="sort-button" type="submit">
+                                    <i class="bi bi-sort-alpha-up-alt"></i>
+                                </button>
+                                <button class="sort-button" type="submit">
+                                    <i class="bi bi-sort-alpha-down-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-bar-partition">
+                        <div class="price-filter-container">
+                            <a>Price</a>
+                            <div class="price-filter-range">
+                                <form>
+                                    <input type="text" id="minprice" name="minprice" placeholder="Min Price">
+                                    <a> &nbsp; - &nbsp; </a>
+                                    <input type="text" id="maxprice" name="maxprice" placeholder="Max Price">
+                                </form>
+                            </div>
+                            <div class="price-filter-radio">
+                                <label class="radio-container" for="onehundredrange">
+                                    <input type="radio" id="onehundredrange" name="onehundredrange" value="100">PHP 0 - PHP 100<br>
+                                </label>
+                                <label class="radio-container" for="twohundredrange">
+                                    <input type="radio" id="twohundredrange" name="twohundredrange" value="200">PHP 100 - PHP 200<br>
+                                </label>
+                                <label class="radio-container" for="threehundredrange">
+                                    <input type="radio" id="threehundredrange" name="threehundredrange" value="300">PHP 200 - PHP 300<br>
+                                </label>
+                                <label class="radio-container" for="fourhundredrange">
+                                    <input type="radio" id="fourhundredrange" name="fourhundredrange" value="400">PHP 300 - PHP 400<br>
+                                </label>
+                                <label class="radio-container" for="fivehundredrange">
+                                    <input type="radio" id="fivehundredrange" name="fivehundredrange" value="500">PHP 400 - PHP 500<br>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main">
+                <section class="menu">
+                    <div class="menu-item">  
+                        <div class="menu-item-image">
+                            <img src="assets/images/cheeseburger.png" alt="Cheese Burger">
+                        </div>
+                        <div class="menu-item-price">
+                            <div class="menu-item-price-container">
+                                <a>Cheese Burger</a>
+                                <p>Starts at ₱165.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">  
+                        <div class="menu-item-image">
+                            <img src="assets/images/cheeseburger.png" alt="Cheese Burger">
+                        </div>
+                        <div class="menu-item-price">
+                            <div class="menu-item-price-container">
+                                <a>Cheese Burger</a>
+                                <p>Starts at ₱165.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More menu items here -->
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
-{{ products | json}}
+
