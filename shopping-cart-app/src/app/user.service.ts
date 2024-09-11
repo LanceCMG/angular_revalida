@@ -70,7 +70,9 @@ export class UserService {
       catchError(this.handleError<any>('deactivateUser'))
     );
   }
-
+  updateUser(id: number,user: any): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/${id}`, user);
+  }
   // Handle HTTP errors
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

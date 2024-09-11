@@ -18,7 +18,6 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
-import { AdminGuard } from './admin.guard';
 
 @NgModule({
   declarations: [
@@ -42,8 +41,10 @@ import { AdminGuard } from './admin.guard';
     RouterModule,
     CommonModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [AdminGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
