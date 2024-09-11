@@ -30,11 +30,6 @@ body {
     overflow: auto;
 }
 
-#main {
-    background-color: #fdfbec;
-    float: left;
-}
-
 #footer {
     background-color: #c10100;
 }
@@ -54,6 +49,10 @@ body {
     margin: 20px 20px 20px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+}
+
+.side-bar-nav {
+    width: 300px;
 }
 
 .side-bar-nav a{
@@ -185,6 +184,74 @@ body {
 .menu-item-price-container {
     padding-top: 20px;
 }
+
+/* angular material cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+mat-card {
+    width: 200px;
+    background-color: transparent;
+}
+
+.card-image-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    height: 200px;            /* Example height */
+    border: 1px solid #ccc;   /* Optional: Just to visualize the parent */
+}
+
+.menu-text {
+    background-color: #e4163d;
+}
+
+/* Container for vertical button toggle group */
+.vertical-toggle-group {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 300px; /* Adjust width as needed */
+}
+  
+/* Style for each button toggle */
+.mat-button-toggle {
+    width: 100%; /* Make each button toggle full width of the container */
+    padding: 5px; /* Add padding to buttons */
+    background-color: #fff;
+    color: #000;
+}
+
+/* Remove the border radius if you want square corners */
+.mat-button-toggle {
+    border-radius: 0;
+}
+
+/* Remove hover effect or customize as needed */
+.mat-button-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.04); /* Light gray on hover */
+}
+
+/* Customize the appearance of selected button toggle */
+.mat-button-toggle-checked {
+    background-color: #e4163d; /* Teal background when selected */
+    color: white; /* White text color when selected */
+    font-weight: 600;
+}
+
+/* Optional: Add styles for focus state */
+.mat-button-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12); /* Focus outline */
+}
+/* Remove hover effect for selected (active) button */
+.mat-button-toggle-checked:hover {
+    background-color: #e4163d !important;
+    box-shadow: none !important;
+  }
+  
 
 @media screen and (max-width: 700px) {
     #side-bar {
