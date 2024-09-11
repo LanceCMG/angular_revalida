@@ -32,8 +32,9 @@ export class UserService {
     return this.http.get<any[]>(this.apiUrl).pipe(
       map(users => users.find(user => 
         user.username === username && 
-        user.password === password && 
-        user.active === true)), // sana gumana toh para sa deactivated user
+        user.password === password 
+        // && user.active === true
+        )), // sana gumana toh para sa deactivated user
       catchError(this.handleError<any>('authenticateUser', []))
     );
   }

@@ -19,6 +19,13 @@ import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
 
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +49,13 @@ import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.compone
     CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
