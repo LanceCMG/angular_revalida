@@ -71,6 +71,11 @@ export class UserService {
       catchError(this.handleError<any>('deactivateUser'))
     );
   }
+  activateUser(userId: number): Observable<any> {
+    return this.http.patch<any>(`${this.apiUrl}/${userId}`, { active: true }).pipe(
+      catchError(this.handleError<any>('activateUser'))
+    );
+  }
   updateUser(id: number,user: any): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/${id}`, user);
   }

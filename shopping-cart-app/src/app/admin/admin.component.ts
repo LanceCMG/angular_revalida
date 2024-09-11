@@ -63,4 +63,16 @@ export class AdminComponent implements OnInit {
       }
     );
   }
+
+  activateUser(userId: number): void {
+    this.userService.activateUser(userId).subscribe(
+      () => {
+        this.loadUsers();
+      },
+      (error) => {
+        this.errorMessage = 'Failed to activate user';
+        console.error(error);
+      }
+    );
+  }
 }
