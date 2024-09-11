@@ -33,7 +33,7 @@ export class UserService {
       map(users => users.find(user => 
         user.username === username && 
         user.password === password 
-        // && user.active === true
+        && user.active === true
         )), // sana gumana toh para sa deactivated user
       catchError(this.handleError<any>('authenticateUser', []))
     );

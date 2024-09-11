@@ -9,8 +9,12 @@
       "lastName": "Doe",
       "email": "admin@example.com",
       "birthdate": "2000-01-01",
-      "interest": ["burger","coffee"],
-      "mobile": 639111111111
+      "interest": [
+        "burger",
+        "coffee"
+      ],
+      "mobile": 639111111111,
+      "active": true
     },
     {
       "id": "2",
@@ -21,9 +25,12 @@
       "lastName": "Smith",
       "email": "customer@example.com",
       "birthdate": "1990-05-15",
-      "interest": ["burger","coffee"],
-      "mobile": 639222222222
-  
+      "interest": [
+        "burger",
+        "coffee"
+      ],
+      "mobile": 639222222222,
+      "active": true
     },
     {
       "id": "3",
@@ -34,9 +41,12 @@
       "lastName": "Gapuz",
       "email": "agapuz@77global.biz",
       "birthdate": "1997-04-05",
-      "interest": ["burger","coffee"],
-      "mobile": 639333333333
-    
+      "interest": [
+        "burger",
+        "coffee"
+      ],
+      "mobile": 639333333333,
+      "active": true
     }
   ],
   "products": [
@@ -155,6 +165,56 @@
     {
       "id": "1",
       "userId": 2,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
       "items": [
         {
           "productId": 1,
