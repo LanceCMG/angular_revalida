@@ -9,7 +9,10 @@
       "lastName": "Doe",
       "email": "admin@example.com",
       "birthdate": "2000-01-01",
-      "interest": ["burger","coffee"],
+      "interest": [
+        "burger",
+        "coffee"
+      ],
       "mobile": 639111111111,
       "active": true
     },
@@ -22,7 +25,10 @@
       "lastName": "Smith",
       "email": "customer@example.com",
       "birthdate": "1990-05-15",
-      "interest": ["burger","coffee"],
+      "interest": [
+        "burger",
+        "coffee"
+      ],
       "mobile": 639222222222,
       "active": true
     },
@@ -35,7 +41,10 @@
       "lastName": "Gapuz",
       "email": "agapuz@77global.biz",
       "birthdate": "1997-04-05",
-      "interest": ["burger","coffee"],
+      "interest": [
+        "burger",
+        "coffee"
+      ],
       "mobile": 639333333333,
       "active": true
     }
@@ -45,7 +54,7 @@
       "id": 1,
       "name": "Cheese Burger",
       "description": "Signature flame-grilled beef patty with melted cheese.",
-      "price": 129.00,
+      "price": 129,
       "category": "entrees",
       "stock": 50,
       "sales": 20
@@ -54,7 +63,7 @@
       "id": 2,
       "name": "Hawaiian Pizza",
       "description": "Classic hand-tossed pizza topped with pineapple, ham, and pepperoni.",
-      "price": 259.00,
+      "price": 259,
       "category": "entrees",
       "stock": 50,
       "sales": 18
@@ -63,7 +72,7 @@
       "id": 3,
       "name": "Spaghetti",
       "description": "Filipino-style spaghetti pasta with meatballs.",
-      "price": 229.00,
+      "price": 229,
       "category": "entrees",
       "stock": 50,
       "sales": 15
@@ -72,7 +81,7 @@
       "id": 4,
       "name": "Chicken Fingers",
       "description": "Crispy and juicy chicken tenders that are breaded and fried to perfection.",
-      "price": 239.00,
+      "price": 239,
       "category": "entrees",
       "stock": 50,
       "sales": 10
@@ -81,7 +90,7 @@
       "id": 5,
       "name": "Nachos",
       "description": "Golden tortilla chips generously smothered with perfectly melted cheese.",
-      "price": 139.00,
+      "price": 139,
       "category": "entrees",
       "stock": 50,
       "sales": 16
@@ -90,7 +99,7 @@
       "id": 6,
       "name": "Waffles",
       "description": "Freshly baked waffle topped with sundae.",
-      "price": 129.00,
+      "price": 129,
       "category": "entrees",
       "stock": 50,
       "sales": 11
@@ -99,7 +108,7 @@
       "id": 7,
       "name": "Fries",
       "description": "Savory homemade seasoned French fries.",
-      "price": 59.00,
+      "price": 59,
       "category": "sides",
       "stock": 50,
       "sales": 10
@@ -108,7 +117,7 @@
       "id": 8,
       "name": "Onion Rings",
       "description": "Homemade deep-fried onion Rings.",
-      "price": 59.00,
+      "price": 59,
       "category": "sides",
       "stock": 50,
       "sales": 9
@@ -117,7 +126,7 @@
       "id": 8,
       "name": "Iced Coffee",
       "description": "Fresh brewed and served over ice.",
-      "price": 109.00,
+      "price": 109,
       "category": "drinks",
       "stock": 50,
       "sales": 19
@@ -126,7 +135,7 @@
       "id": 9,
       "name": "Chocolate Milkshake",
       "description": "Creamy Chocolate Milkshake made with premium ingredients and ice cream.",
-      "price": 109.00,
+      "price": 109,
       "category": "drinks",
       "stock": 50,
       "sales": 8
@@ -135,7 +144,7 @@
       "id": 9,
       "name": "Mango Lemonade Refresher",
       "description": "Refreshing blend of lemonade and mango flavors.",
-      "price": 109.00,
+      "price": 109,
       "category": "drinks",
       "stock": 50,
       "sales": 7
@@ -144,13 +153,13 @@
       "id": 10,
       "name": "Bottled water",
       "description": "Mineral drinking water.",
-      "price": 29.00,
+      "price": 29,
       "category": "drinks",
       "stock": 50,
       "sales": 5
     }
   ],
-  "category":[
+  "category": [
     {
       "id": 1,
       "name": "entrees"
@@ -185,10 +194,10 @@
         {
           "productId": 1,
           "quantity": 1,
-          "price": 2.0
+          "price": 2
         }
       ],
-      "totalPrice": 2.0,
+      "totalPrice": 2,
       "createdAt": "2024-08-28"
     }
   ],
