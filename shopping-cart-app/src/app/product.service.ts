@@ -30,3 +30,13 @@ export class ProductService {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
 }
+export interface Product {
+  id: number,
+  name: string,
+  description: string,
+  price: number,
+  category: string,
+  stock: number,
+  sales: number
+
+}
