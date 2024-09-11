@@ -11,6 +11,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
+import { AdminGuard } from './admin.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -20,13 +21,12 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'pending-orders', component: PendingOrdersComponent },
-  { path: 'dashboard-admin', component: DashboardAdminComponent },
+  { path: 'dashboard-admin', component: DashboardAdminComponent, canActivate: [AdminGuard] },
   { path: 'products', component: ProductsComponent },
-  { path: 'admin', component: AdminComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'admin', component: AdminComponent, canActivate: [AdminGuard] },
   { path: 'acknowledgment', component: AcknowledgmentComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: '**', redirectTo: '/login' } // Wildcard para sa 404
+  { path: '**', redirectTo: '/login' }  // Wildcard for 404
 ];
 
 @NgModule({

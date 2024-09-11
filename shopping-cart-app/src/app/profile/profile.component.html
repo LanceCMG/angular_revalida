@@ -1,1 +1,51 @@
-<p>profile works!</p>
+<!-- Apply the container class to the main div -->
+<div class="user-container">
+    <!-- Display user details or form based on isEditing flag -->
+    <div *ngIf="!isEditing; else editMode">
+      <h1 class="header">Welcome, {{ user.firstName }} {{ user.lastName }}!</h1>
+      <p>Username: {{ user.username }}</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Birthday: {{ user.birthdate }}</p>
+      <p>Mobile: {{ user.mobile }}</p>
+      <p>Interest: {{ user.interest }}</p>
+      
+
+      <button (click)="editUser()">Edit Details</button>
+    </div>
+  
+    <ng-template #editMode>
+      <form (ngSubmit)="updateUser()">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input id="firstName" [(ngModel)]="user.firstName" name="firstName" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" [(ngModel)]="user.lastName" name="lastName" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" [(ngModel)]="user.email" name="email" required>
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input id="username" [(ngModel)]="user.username" name="username" required>
+        </div>
+        <div>
+            <label for="birthdate">Birthday:</label>
+            <input id="birthdate" [(ngModel)]="user.birthdate" name="birthdate" required>
+        </div>
+        <div>
+            <label for="mobile">Mobile</label>
+            <input id="mobile" [(ngModel)]="user.mobile" name="mobile" required>
+        </div>
+        <div>
+            <label for="interest">Interest</label>
+            <input id="interest" [(ngModel)]="user.interest" name="interest" required>
+        </div>
+        <button type="submit">Save Changes</button>
+        <button type="button" (click)="cancelEdit()">Cancel</button>
+      </form>
+    </ng-template>
+  </div>
+  

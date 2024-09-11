@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,17 +17,7 @@ import { PendingOrdersComponent } from './pending-orders/pending-orders.componen
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
-
-import {MatCardModule} from '@angular/material/card';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatButtonModule } from '@angular/material/button'; 
-import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
-
 
 @NgModule({
   declarations: [
@@ -45,16 +37,14 @@ import { MatInputModule } from '@angular/material/input';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
+    RouterModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    MatCardModule,
-    MatTabsModule,
-    MatButtonToggleModule,
-    MatIconModule
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
