@@ -37,6 +37,7 @@ export interface Product {
   price: number,
   category: string,
   stock: number,
-  sales: number
+  sales: number,
+  url: string
 
 }

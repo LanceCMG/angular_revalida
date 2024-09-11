@@ -1,6 +1,6 @@
 <!-- Apply the container class to the main div -->
 <div class="user-container">
-    <!-- Display user details or form based on isEditing flag -->
+    
     <div *ngIf="!isEditing; else editMode">
       <h1 class="header">Welcome, {{ user.firstName }} {{ user.lastName }}!</h1>
       <p>Username: {{ user.username }}</p>
