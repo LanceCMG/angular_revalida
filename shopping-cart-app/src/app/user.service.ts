@@ -30,7 +30,10 @@ export class UserService {
   // Method to authenticate user by username and password
   authenticateUser(username: string, password: string): Observable<any> {
     return this.http.get<any[]>(this.apiUrl).pipe(
-      map(users => users.find(user => user.username === username && user.password === password)),
+      map(users => users.find(user => 
+        user.username === username && 
+        user.password === password && 
+        user.active === true)), // sana gumana toh para sa deactivated user
       catchError(this.handleError<any>('authenticateUser', []))
     );
   }
