@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "admin",
       "role": "admin",
@@ -17,7 +17,7 @@
       "active": true
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "janesmith",
       "password": "janesmith",
       "role": "customer",
@@ -33,7 +33,7 @@
       "active": true
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "amsgapuz",
       "password": "amsgapuz",
       "role": "customer",
@@ -51,132 +51,400 @@
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Cheese Burger",
       "description": "Signature flame-grilled beef patty with melted cheese.",
       "price": 129,
       "category": "entrees",
-      "stock": 50,
-      "sales": 20
+      "stock": 50
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Hawaiian Pizza",
       "description": "Classic hand-tossed pizza topped with pineapple, ham, and pepperoni.",
       "price": 259,
       "category": "entrees",
-      "stock": 50,
-      "sales": 18
+      "stock": 50
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Spaghetti",
       "description": "Filipino-style spaghetti pasta with meatballs.",
       "price": 229,
       "category": "entrees",
-      "stock": 50,
-      "sales": 15
+      "stock": 50
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Chicken Fingers",
       "description": "Crispy and juicy chicken tenders that are breaded and fried to perfection.",
       "price": 239,
       "category": "entrees",
-      "stock": 50,
-      "sales": 10
+      "stock": 50
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Nachos",
       "description": "Golden tortilla chips generously smothered with perfectly melted cheese.",
       "price": 139,
       "category": "entrees",
-      "stock": 50,
-      "sales": 16
+      "stock": 50
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Waffles",
       "description": "Freshly baked waffle topped with sundae.",
       "price": 129,
       "category": "entrees",
-      "stock": 50,
-      "sales": 11
+      "stock": 50
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Fries",
       "description": "Savory homemade seasoned French fries.",
       "price": 59,
       "category": "sides",
-      "stock": 50,
-      "sales": 10
+      "stock": 50
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Onion Rings",
       "description": "Homemade deep-fried onion Rings.",
       "price": 59,
       "category": "sides",
-      "stock": 50,
-      "sales": 9
+      "stock": 50
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Iced Coffee",
       "description": "Fresh brewed and served over ice.",
       "price": 109,
       "category": "drinks",
-      "stock": 50,
-      "sales": 19
+      "stock": 50
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Chocolate Milkshake",
       "description": "Creamy Chocolate Milkshake made with premium ingredients and ice cream.",
       "price": 109,
       "category": "drinks",
-      "stock": 50,
-      "sales": 8
+      "stock": 50
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Mango Lemonade Refresher",
       "description": "Refreshing blend of lemonade and mango flavors.",
       "price": 109,
       "category": "drinks",
-      "stock": 50,
-      "sales": 7
+      "stock": 50
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Bottled water",
       "description": "Mineral drinking water.",
       "price": 29,
       "category": "drinks",
-      "stock": 50,
-      "sales": 5
+      "stock": 50
     }
   ],
   "category": [
     {
-      "id": 1,
+      "id": "1",
       "name": "entrees"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "sides"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "drinks"
     }
   ],
   "carts": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 2,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "",
+      "userId": 1,
       "items": [
         {
           "productId": 1,
@@ -187,7 +455,7 @@
   ],
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 2,
       "status": "pending",
       "items": [
@@ -203,11 +471,11 @@
   ],
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "name": "pending"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "delivered"
     }
   ]

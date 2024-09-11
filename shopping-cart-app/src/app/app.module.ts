@@ -18,7 +18,13 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
-import { AdminGuard } from './admin.guard';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
 
 @NgModule({
   declarations: [
@@ -42,8 +48,16 @@ import { AdminGuard } from './admin.guard';
     RouterModule,
     CommonModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule
   ],
-  providers: [AdminGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
