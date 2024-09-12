@@ -10,10 +10,13 @@ import { User } from '../user.service';
 export class AdminComponent implements OnInit {
   users: User[] = [];
   newUser = {
-    username: '',
-    email: '',
-    mobile: '',
-    role: ''
+    username: '', 
+            password: '',
+            firstName: '',
+            lastName: '',
+            email: '', 
+            mobile: '', 
+            role: ''
   };
   errorMessage: string | null = null;
 
@@ -36,11 +39,23 @@ export class AdminComponent implements OnInit {
   }
 
   addUser(): void {
-    if (this.newUser.username && this.newUser.email && this.newUser.mobile) {
+    if (this.newUser.username && 
+      this.newUser.password &&
+      this.newUser.firstName &&
+      this.newUser.lastName &&
+      this.newUser.email && 
+      this.newUser.mobile) {
       this.userService.addUser(this.newUser).subscribe(
         () => {
           this.loadUsers(); 
-          this.newUser = { username: '', email: '', mobile: '', role: '' };
+          this.newUser = { 
+            username: '', 
+            password: '',
+            firstName: '',
+            lastName: '',
+            email: '', 
+            mobile: '', 
+            role: '' };
         },
         (error) => {
           this.errorMessage = 'Failed to add user';
