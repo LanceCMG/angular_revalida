@@ -17,7 +17,7 @@ import { CustomerGuard} from './customer.guard'
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AdminGuard, CustomerGuard] },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'cart', component: CartComponent, canActivate: [AdminGuard, CustomerGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AdminGuard, CustomerGuard] },
   { path: 'checkout', component: CheckoutComponent, canActivate: [AdminGuard, CustomerGuard] },
