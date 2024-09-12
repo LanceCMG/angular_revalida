@@ -33,6 +33,7 @@ body {
 #main {
     background-color: #fdfbec;
     float: left;
+    padding: 100px 50px;
     
 }
 
@@ -159,8 +160,25 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    
 
 }
+
+  /* Apply Flexbox to the ul to arrange li elements horizontally */
+.product-list {
+    display: flex;
+    flex-wrap: nowrap;  /* Prevents items from wrapping to the next line */
+    overflow-x: auto;   /* Allows horizontal scrolling if needed */
+    padding: 0;         /* Removes default padding */
+    margin: 0;          /* Removes default margin */
+    list-style: none;   /* Removes default list styling */
+  }
+  
+  /* Style each li item */
+  .product-item {
+    flex: 0 0 auto;     /* Prevents the item from shrinking or growing */
+    margin-right: 10px; /* Space between items */
+  }
 
 .menu-item {
     background-color: white;
@@ -172,6 +190,7 @@ body {
     width: 200px;
     min-height: 200px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
 .menu-item-image {
@@ -200,6 +219,19 @@ body {
 .menu-item-price-container {
     padding-top: 20px;
 }
+
+.headerTitle {
+    font-size: 24px;           /* Adjusts the font size */
+    font-weight: bold;         /* Makes the font bold */
+    color: #333;               /* Sets the text color */
+    text-align: center;        /* Centers the text horizontally */
+    margin: 20px 0;            /* Adds vertical spacing above and below */
+    padding: 10px;            /* Adds padding inside the header */
+    border-bottom: 2px solid #e4163d; /* Adds a bottom border with color */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    font-family: 'Arial', sans-serif; /* Sets the font family */
+    background-color: #f9f9f9; /* Optional: Adds background color */
+  }
 
 @media screen and (max-width: 700px) {
     #side-bar {

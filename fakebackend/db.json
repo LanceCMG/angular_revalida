@@ -7,7 +7,7 @@
       "role": "admin",
       "firstName": "John",
       "lastName": "Doe",
-      "email": "admin@example.com",
+      "email": "admin5@example.com",
       "birthdate": "2000-01-01",
       "interest": [
         "burger",
@@ -56,7 +56,9 @@
       "description": "Signature flame-grilled beef patty with melted cheese.",
       "price": 129,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 40,
+      "url":"assets/images/cheeseburger.png"
     },
     {
       "id": "2",
@@ -64,7 +66,9 @@
       "description": "Classic hand-tossed pizza topped with pineapple, ham, and pepperoni.",
       "price": 259,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 44,
+      "url":"assets/images/HawaiianPizza.png"
     },
     {
       "id": "3",
@@ -72,7 +76,9 @@
       "description": "Filipino-style spaghetti pasta with meatballs.",
       "price": 229,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 45,
+      "url":"assets/images/Spaghetti.png"
     },
     {
       "id": "4",
@@ -80,7 +86,9 @@
       "description": "Crispy and juicy chicken tenders that are breaded and fried to perfection.",
       "price": 239,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 30,
+      "url":"assets/images/ChickenFingers.png"
     },
     {
       "id": "5",
@@ -88,7 +96,9 @@
       "description": "Golden tortilla chips generously smothered with perfectly melted cheese.",
       "price": 139,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 44,
+      "url":"assets/images/Nachos.png"
     },
     {
       "id": "6",
@@ -96,7 +106,9 @@
       "description": "Freshly baked waffle topped with sundae.",
       "price": 129,
       "category": "entrees",
-      "stock": 50
+      "stock": 50,
+      "sales": 33,
+      "url":"assets/images/cheeseburger.png"
     },
     {
       "id": "7",
@@ -104,7 +116,9 @@
       "description": "Savory homemade seasoned French fries.",
       "price": 59,
       "category": "sides",
-      "stock": 50
+      "stock": 50,
+      "sales": 15,
+      "url":"assets/images/fries.png"
     },
     {
       "id": "8",
@@ -112,7 +126,9 @@
       "description": "Homemade deep-fried onion Rings.",
       "price": 59,
       "category": "sides",
-      "stock": 50
+      "stock": 50,
+      "sales": 20,
+      "url":"assets/images/OnionRings.png"
     },
     {
       "id": "8",
@@ -120,7 +136,9 @@
       "description": "Fresh brewed and served over ice.",
       "price": 109,
       "category": "drinks",
-      "stock": 50
+      "stock": 50,
+      "sales": 56,
+      "url":"assets/images/IcedCoffee.png"
     },
     {
       "id": "9",
@@ -128,7 +146,9 @@
       "description": "Creamy Chocolate Milkshake made with premium ingredients and ice cream.",
       "price": 109,
       "category": "drinks",
-      "stock": 50
+      "stock": 50,
+      "sales": 18,
+      "url":"assets/images/Milkshake.png"
     },
     {
       "id": "9",
@@ -136,7 +156,9 @@
       "description": "Refreshing blend of lemonade and mango flavors.",
       "price": 109,
       "category": "drinks",
-      "stock": 50
+      "stock": 50,
+      "sales": 19,
+      "url":"assets/images/MangoLemonade.png"
     },
     {
       "id": "10",
@@ -144,7 +166,9 @@
       "description": "Mineral drinking water.",
       "price": 29,
       "category": "drinks",
-      "stock": 50
+      "stock": 50,
+      "sales": 4,
+      "url":"assets/images/BottledWater.png"
     }
   ],
   "category": [
@@ -444,6 +468,16 @@
     },
     {
       "id": "",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "OUGX_yT",
       "userId": 1,
       "items": [
         {

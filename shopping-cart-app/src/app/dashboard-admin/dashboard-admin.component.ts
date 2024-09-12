@@ -22,7 +22,7 @@ export class DashboardAdminComponent implements OnInit {
     this.productService.getProducts().subscribe(
       (products) => {
       this.products = products;
-      this.productsTop = this.products.sort((a, b) => b.sales - b.sales);
+      this.productsTop = this.products.sort((a, b) => b.sales - a.sales);
       
 
       });

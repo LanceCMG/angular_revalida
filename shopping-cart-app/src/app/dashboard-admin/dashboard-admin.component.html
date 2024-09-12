@@ -8,9 +8,12 @@
     <div id="body-container">
         <div id="floating-header">
             <img src="assets/images/77Diners.png" height="80">
+            <a  routerLink="/admin"> ADMIN </a>
+            <a> | </a>
+            <a  routerLink="/products"> PRODUCTS </a>
         </div>
         <div id="content-container">
-            <div id="content-wrapper">
+            <!-- <div id="content-wrapper">
                 <div id="side-bar">
                     <div class="side-bar-partition">
                         <div class="side-bar-nav">
@@ -91,20 +94,20 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <div id="main">
                 <div class="op-container">
+                    <h1 class="headerTitle">Best Sellers</h1>    
+                <ul class="product-list">
                     
-                <ul>
-                    <a>Best Sellers</a>
-                       <ng-container *ngFor="let product of productsTop | slice:0:5">
+                       <ng-container *ngFor="let product of productsTop | slice:0:5" class="product-item">
                         
                             <section class="submenu">
                                 
                             <div class="menu-item">  
                                 <div class="menu-item-image">
-                                    <img src="assets/images/cheeseburger.png" alt={{product.name}}>
+                                    <img src={{product.url}} alt={{product.name}}>
                                 </div>
                                 <div class="menu-item-price">
                                     <div class="menu-item-price-container">
@@ -117,8 +120,8 @@
                         </ng-container>
                 </ul>
                 </div>
-                <ul>
-                  <ng-container *ngFor="let product of products">
+                <!-- <ul class="product-list">
+                  <ng-container *ngFor="let product of products" >
                         <section class="menu">
                     <div class="menu-item">  
                         <div class="menu-item-image">
@@ -133,7 +136,7 @@
                     </div>
                     </section>
                 </ng-container>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>
