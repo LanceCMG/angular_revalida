@@ -4,6 +4,7 @@ import { UserService } from '../user.service'; // Adjust the import path as nece
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
+  styleUrls: ['profile.component.css']
 })
 export class ProfileComponent implements OnInit {
   user: any;

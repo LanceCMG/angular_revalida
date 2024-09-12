@@ -1,2 +1,56 @@
-<p>products works!</p>
-{{products | json }}
+<!-- <p>products works!</p>
+{{products | json }} -->
+<!-- products.component.html -->
+<!-- <div class="product-list">
+    <div *ngFor="let product of products" class="product-card">
+      <h2>{{ product.name }}</h2>
+      <img [src]="product.url" [alt]="product.name" />
+    <p>{{ product.description }}</p>
+    <p>Price: {{ product.price | currency:'PHP':'symbol':'1.2-2' }}</p>
+    </div>
+  </div> -->
+
+  <!-- products.component.html -->
+<div class="container">
+    <h1>Product Management</h1>
+  
+    <!-- Form for Adding/Editing Product -->
+    <ng-container *ngIf="isEditing || isAdding; else productList">
+      <form (ngSubmit)="isEditing ? updateProduct() : addProduct()">
+        <div>
+          <label for="name">Product Name:</label>
+          <input id="name" [(ngModel)]="currentProduct.name" name="name" required>
+        </div>
+        <div>
+          <label for="url">Image URL:</label>
+          <input id="url" [(ngModel)]="currentProduct.url" name="url" required>
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" [(ngModel)]="currentProduct.description" name="description" required></textarea>
+        </div>
+        <div>
+          <label for="price">Price:</label>
+          <input id="price" type="number" [(ngModel)]="currentProduct.price" name="price" required>
+        </div>
+        <button type="submit">{{ isEditing ? 'Update Product' : 'Add Product' }}</button>
+        <button type="button" (click)="cancel()">Cancel</button>
+      </form>
+    </ng-container>
+  
+    <!-- Product List -->
+    <ng-template #productList>
+      <button (click)="startAddProduct()">Add New Product</button>
+      <div class="product-list">
+        <div *ngFor="let product of products" class="product-card">
+          <h2>{{ product.name }}</h2>
+          <img [src]="product.url" [alt]="product.name" />
+          <p>{{ product.description }}</p>
+          <p>Price: {{ product.price | currency:'PHP':'symbol':'1.2-2' }}</p>
+          <button (click)="startEditProduct(product)">Edit</button>
+          <button (click)="deleteProduct(product.id)">Delete</button>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  

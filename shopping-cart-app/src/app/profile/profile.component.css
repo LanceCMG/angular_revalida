@@ -1,20 +1,32 @@
- /* Style for the container */
-.user-container {
+
+/* .user-container {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style for the header */
+  } */
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: auto;
+
+} 
+ 
   .header {
-    color: red;
+    color: #e4163d;
     font-size: 24px;
     margin-bottom: 20px;
-    background-color: #e4163d
+    text-align: center;
+    /* background-color: #e4163d */
+
   }
   
-  /* Style for the form elements */
+  
  form div {
     margin-bottom: 10px;
   }
@@ -32,6 +44,14 @@
   
   button {
     margin-right: 10px;
+    background-color: #e4163d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
   } 
    
   
+
+   
