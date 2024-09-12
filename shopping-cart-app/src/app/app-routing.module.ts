@@ -12,17 +12,18 @@ import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { AcknowledgmentComponent } from './acknowledgment/acknowledgment.component';
 import { AdminGuard } from './admin.guard';
+import { CustomerGuard} from './customer.guard'
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'cart', component: CartComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'pending-orders', component: PendingOrdersComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AdminGuard, CustomerGuard] },
+  { path: 'cart', component: CartComponent, canActivate: [AdminGuard, CustomerGuard] },
+  { path: 'profile', component: ProfileComponent, canActivate: [AdminGuard, CustomerGuard] },
+  { path: 'checkout', component: CheckoutComponent, canActivate: [AdminGuard, CustomerGuard] },
+  { path: 'pending-orders', component: PendingOrdersComponent, canActivate: [AdminGuard, CustomerGuard] },
   { path: 'dashboard-admin', component: DashboardAdminComponent, canActivate: [AdminGuard] },
-  { path: 'products', component: ProductsComponent },
+  { path: 'products', component: ProductsComponent, canActivate: [AdminGuard] },
   { path: 'admin', component: AdminComponent, canActivate: [AdminGuard] },
   { path: 'acknowledgment', component: AcknowledgmentComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
