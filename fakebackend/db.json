@@ -30,7 +30,7 @@
         "coffee"
       ],
       "mobile": 639222222222,
-      "active": true
+      "active": false
     },
     {
       "id": "3",
@@ -56,7 +56,7 @@
       "description": "Signature flame-grilled beef patty with melted cheese.",
       "price": 129,
       "category": "entrees",
-      "stock": 50,
+      "stock": 60,
       "sales": 40,
       "url": "assets/images/cheeseburger.png"
     },
